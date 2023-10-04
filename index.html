@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" id="oranda" class="dark axo">
+    <head>
+        <title>sunbeam</title>
+        
+            <meta property="og:url" content="https://pomdtr.github.io/sunbeam/" />
+        
+        
+            <link rel="icon" href="/sunbeam/favicon.ico" />
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+            <meta name="description" content="Generate complex TUIs from simple scripts written in any language." />
+            <meta property="og:description" content="Generate complex TUIs from simple scripts written in any language." />
+        
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="sunbeam" />
+        
+        
+        
+            <meta name="twitter:creator" content="@pomdtr" />
+            <meta name="twitter:site" content="@pomdtr" />
+        
+        <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+        <link rel="stylesheet" href="/sunbeam/oranda-v0.4.1.css" />
+        
+        
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-body">
+                
+                    <div class="repo_banner">
+                        <a href="https://github.com/pomdtr/sunbeam">
+                            <div class="github-icon" aria-hidden="true"></div>
+                            Check out our GitHub!
+                        </a>
+                    </div>
+                
+
+                <main>
+                    <header>
+                        
+                        <h1 class="title">sunbeam</h1>
+                        
+    <nav class="nav">
+        <ul>
+            <li><a href="/sunbeam/">Home</a></li>
+
+            
+
+            
+
+            
+                <li><a href="/sunbeam/book/">Docs</a></li>
+            
+
+            
+
+            
+        </ul>
+    </nav>
+
+                    </header>
+
+                    
+
+<p>Sunbeam is a command-line launcher, inspired by <a href="https://github.com/junegunn/fzf" rel="noopener noreferrer">fzf</a>, <a href="https://raycast.com" rel="noopener noreferrer">raycast</a> and <a href="https://github.com/charmbracelet/gum" rel="noopener noreferrer">gum</a>.</p>
+<p>It allows you to build interactives UIs from simple scripts.</p>
+<p><img src="./static/demo.gif" alt="sunbeam demo gif"></p>
+<p>Example Integrations:</p>
+<ul>
+<li><a href="https://github.com/pomdtr/sunbeam-vscode" rel="noopener noreferrer">VS Code</a></li>
+<li><a href="https://github.com/pomdtr/sunbeam-files" rel="noopener noreferrer">File Browser</a></li>
+<li><a href="https://github.com/pomdtr/sunbeam-bitwarden" rel="noopener noreferrer">Bitwarden</a></li>
+<li><a href="https://github.com/pomdtr/sunbeam-github" rel="noopener noreferrer">Github</a></li>
+<li><a href="https://github.com/pomdtr/sunbeam-tldr" rel="noopener noreferrer">TLDR Pages</a></li>
+<li><a href="https://github.com/pomdtr/sunbeam-devdocs" rel="noopener noreferrer">Devdocs</a></li>
+</ul>
+<p>Visit the <a href="https://pomdtr.github.io/sunbeam/book" rel="noopener noreferrer">documentation</a> for more information (including installation instructions).</p>
+<h2>Why sunbeam?</h2>
+<p>I love TUIs, but I spent way to much time writing them.</p>
+<p>I used a lot of application launchers, but all of them had some limitations.</p>
+<p>Sunbeam try to address these limitations:</p>
+<h3>Sunbeam runs on all platforms</h3>
+<p>Sunbeam is distributed as a single binary, so you can run it on any platform. The sunbeam extension system is also designed to be cross-platform.</p>
+<p><img src="./static/alacritty.png" alt="sunbeam running in alacritty"></p>
+<h3>Sunbeam is language agnostic</h3>
+<p>Sunbeam communicates with your scripts using JSON, so you can use any language you want.
+The only requirement is that the script is executable and outputs a JSON object conforming to the Sunbeam JSON Schema on stdout.</p>
+<p><img src="./static/vscode.png" alt="sunbeam running in vscode"></p>
+<h3>Sunbeam is easy to extend</h3>
+<p>Instead of reiventing the wheel, sunbeam relies on your familiarity with git and github to make it easy to create, update, publish and install extensions.</p>
+<p>Creating a new extension is as easy as creating a new folder and adding a <code>sunbeam-extension</code> executable to it. Sunbeam supports installing extension from any git host, including github.</p>
+<p>If you want your extension to be discoverable, you can also add a <code>sunbeam-extension</code> topic to your github repository.</p>
+<p>Since sunbeam uses <code>git</code> under the hood, you can create private extensions by using private git repositories.</p>
+<h3>Sunbeam supports custom clients</h3>
+<p>Sunbeam comes with a built-in TUI to interact with your scripts, but you can also use any other client.</p>
+<p>Currently the only alternative client is <a href="https://github.com/pomdtr/sunbeam-raycast" rel="noopener noreferrer">sunbeam-raycast</a>.</p>
+<p><img src="./static/raycast.png" alt="raycast integration"></p>
+<h2>Inspirations / Alternatives</h2>
+<p>Sunbeam wouldn't exist without taking inspirations from incredible tools. Make sure to checkout:</p>
+<ul>
+<li><a href="https://raycast.com" rel="noopener noreferrer">raycast</a>: Sunbeam shamelessly copy most of raycast UX. Even the project name is a reference to raycast.</li>
+<li><a href="https://github.com/junegunn/fzf" rel="noopener noreferrer">fzf</a>: Sunbeam tries to take inspiration from fzf, but it's not a drop-in replacement. Sunbeam is designed to be used as a launcher, not as a fuzzy finder.</li>
+<li><a href="https://slapdash.com" rel="noopener noreferrer">slapdash</a>: The sunbeam event loop was inspired by slapdash. Sadly, slapdash doesn't seem to be updated anymore.</li>
+<li><a href="https://cli.github.com" rel="noopener noreferrer">gh</a>: The sunbeam extension system was inspired by gh, with some modifications to make it more flexible.</li>
+</ul>
+
+
+                </main>
+            </div>
+
+            <footer>
+                
+                    <a href="https://github.com/pomdtr/sunbeam"><div class="github-icon" aria-hidden="true"></div></a>
+                
+                <span>
+                    sunbeam, MIT
+                </span>
+            </footer>
+        </div>
+
+        
+        
+
+        
+
+
+    </body>
+</html>
